@@ -16,3 +16,8 @@
   *UI module* - It is responsible for displaying data and handling click events. From this module, we observing the live data so if anything changes in live                  data this observer will observe that and make that change. I have also developed an adapter module that is responsible for binding data in                    recycler view items.
 
 -> I have also used coroutines to run input/output operations on the background thread. So while doing I/O operations main thread does not get blocked and the application UI can run smoothly.
+
+Result -> 
+![Screenshot_20211009-173939__01](https://user-images.githubusercontent.com/41892669/136657446-1f0b811b-a1c4-4094-b010-b3dc15ad2668.jpg)
+![Screenshot_20211009-174008__01](https://user-images.githubusercontent.com/41892669/136657484-fa9bfc4a-9134-4844-ae6e-832124bc4f15.jpg)
+![Screenshot_20211009-174034__01](https://user-images.githubusercontent.com/41892669/136657489-227598d5-62e5-47a8-a429-b4f1db12f2d2.jpg)
