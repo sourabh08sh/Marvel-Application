@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_character"
+        android:icon="@drawable/ic_character_24"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/nav_comics"
+        android:icon="@drawable/ic_comic_24"
+        tools:ignore="MenuTitle" />
+
+</menu>

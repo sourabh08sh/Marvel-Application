@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ComicsFragment"
+    android:background="#f5f5f5">
+
+    <HorizontalScrollView
+        android:id="@+id/comic_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/comicFilerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@id/allBtn"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/allBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="@string/allComics"
+                android:textColor="@color/radio_text_feed"
+                android:textSize="18sp"
+                android:button="@null"
+                android:layout_marginEnd="28dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/lastWeekBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="@string/lastWeek"
+                android:textColor="@color/radio_text_feed"
+                android:textSize="18sp"
+                android:button="@null"
+                android:layout_marginEnd="28dp"/>
+
+            <RadioButton
+                android:id="@+id/thisWeekBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="@string/thisWeek"
+                android:textColor="@color/radio_text_feed"
+                android:textSize="18sp"
+                android:button="@null"
+                android:layout_marginEnd="28dp"/>
+
+            <RadioButton
+                android:id="@+id/nextWeekBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="@string/nextWeek"
+                android:textColor="@color/radio_text_feed"
+                android:textSize="18sp"
+                android:button="@null"
+                android:layout_marginEnd="28dp"/>
+
+            <RadioButton
+                android:id="@+id/thisMonthBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="@string/thisMonth"
+                android:textColor="@color/radio_text_feed"
+                android:textSize="18sp"
+                android:button="@null"
+                android:layout_marginEnd="28dp"/>
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_comics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comic_filter"/>
+
+    <ProgressBar
+        android:id="@+id/pg_bar_comic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"  />
+
+</RelativeLayout>
