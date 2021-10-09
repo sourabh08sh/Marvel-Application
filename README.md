@@ -1,8 +1,11 @@
+### Add api keys in MainApplication class before running the project.
+
 # Marvel-Application
  Developed an android application using marvel API to show data of marvel characters and comics.
 
 # My Journey while developing this application
 -> First step in this journey is to research marvel API how it works, the structure of data it returns, and other things. 
+
 -> After completing the first step I have started the development of the application. I have used MVVM architecture so, this project is divided into different modules, modules are small parts in which I divided my project.
 
   *Model module* - It is responsible for the abstraction of data sources. This module works with the view model to get and save the data.
