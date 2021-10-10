@@ -152,6 +152,11 @@ class CharacterFragment : Fragment(), CharacterItemClicked,
 
     override fun onSearchStateChanged(enabled: Boolean) {
         val s = if (enabled) "enabled" else "disabled"
+        if (s == "disabled"){
+            searchString = null
+            offset = 0
+            characterViewModel.pagination(searchString, offset)
+        }
     }
 
     override fun onSearchConfirmed(text: CharSequence?) {

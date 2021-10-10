@@ -16,15 +16,17 @@
         android:theme="@style/Theme.MarvelApplication"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".ui.DetailActivity"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:windowSoftInputMode="adjustPan">
+        <activity android:name=".ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.DetailActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
         </activity>
     </application>
 
